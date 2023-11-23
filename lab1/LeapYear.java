@@ -13,8 +13,9 @@ public class LeapYear {
             System.out.printf("%d is not a leap year.\n", year);
         }
     }
+    /** Judge year if LeapYear。 */
     public static boolean isLeapYear(int year) {
-
+        return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
     }
 
     /** Must be provided an integer as a command line argument ARGS. */
